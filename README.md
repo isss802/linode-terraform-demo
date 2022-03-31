@@ -13,6 +13,7 @@ Terraform v1.1.7
 ## Tokenを取得し環境変数に設定
 
 API Tokenの取得はこちらを参照
+
 https://www.linode.com/docs/guides/getting-started-with-the-linode-api/
 
 端末の環境変数にTokenを読み込み
@@ -23,7 +24,10 @@ $ export TF_VAR_token=
 ## Terraform
 
 Webサーバーを複数台設置し、ロードバランサー配下にします。
+
 また、作成したロードバランサーにDNSレコードを付与するTerraformになります。
+
+![1](https://user-images.githubusercontent.com/4577575/161034784-23fa9ee0-d36e-4095-9214-f8fb2f782178.png)
 
 ```sh
 .
@@ -37,5 +41,7 @@ Webサーバーを複数台設置し、ロードバランサー配下にしま�
 ```
 
 ## 参考
+
 https://www.linode.com/docs/guides/create-a-multicloud-infrastructure-using-terraform/
+
 https://www.linode.com/docs/guides/create-a-nodebalancer-with-terraform/
