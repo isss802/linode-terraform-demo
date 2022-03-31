@@ -2,7 +2,7 @@
 
 ## 構成図
 
-![1](https://user-images.githubusercontent.com/4577575/158518085-674dd50b-4dfb-4705-9b5b-869e1d4de77d.png)
+![1](https://user-images.githubusercontent.com/4577575/161034784-23fa9ee0-d36e-4095-9214-f8fb2f782178.png)
 
 ## Terraform インストール
 
