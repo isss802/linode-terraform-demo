@@ -2,7 +2,7 @@ variable "token" {}
 
 variable "domain" {
 	default = {
-		domain = "exsample.site"
+		domain = "example.com"
 	}
 }
 
@@ -25,9 +25,9 @@ variable "web" {
 
 
 resource "random_string" "password" {
-    length = 32
-    special = true
-    upper = true
-    lower = true
-    number = true
+	length = 32
+	special = true
+	upper = true
+	lower = true
+	number = true
 }
