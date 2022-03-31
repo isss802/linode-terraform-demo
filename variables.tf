@@ -23,6 +23,9 @@ variable "web" {
 	}
 }
 
+variable "public_ssh_key" {
+	default = "~/.ssh/id_rsa.pub"
+}
 
 resource "random_string" "password" {
 	length = 32

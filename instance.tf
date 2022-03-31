@@ -4,7 +4,7 @@ resource "linode_instance" "web" {
 	image = var.web.image
 	region = var.region
 	type = var.web.type
-	authorized_keys = ["${chomp(file("~/.ssh/linode/id_rsa.pub"))}"]
+	authorized_keys = ["${chomp(file(var.public_ssh_key))}"]
 
 	group = var.web.group
 	swap_size = 256
