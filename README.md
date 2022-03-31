@@ -43,6 +43,19 @@ Webサーバーを複数台設置し、ロードバランサー配下にしま�
 └── variables.tf 変数の指定
 ```
 
+## Apply
+
+```
+# 初期化
+terraform init
+# 確認
+terraform plan
+# 適用
+terraform apply
+# 削除
+terraform destroy
+```
+
 ## 参考
 
 https://www.linode.com/docs/guides/create-a-multicloud-infrastructure-using-terraform/
