@@ -40,6 +40,7 @@ Webサーバーを複数台設置し、ロードバランサー配下にしま�
 ├── instance.tf 複数台のWebサーバーを作成しNginxをインストール
 ├── nodebalancer.tf ロードバランサーを作成しインスタンスへの付与
 ├── outputs.tf 必要情報の表示
+├── terraform.tf プロバイダー情報の記載
 └── variables.tf 変数の指定
 ```
 
