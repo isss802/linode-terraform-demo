@@ -17,7 +17,7 @@ variable "wordpress" {
 }
 
 variable "stackscript_id" {
-	default = "995737"
+	default = "996728"
 }
 
 variable "stackscript_data" {
