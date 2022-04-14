@@ -50,6 +50,15 @@ terraform apply
 terraform destroy
 ```
 
+## kubeconfigの作成
+
+```
+export KUBE_VAR=`terraform output -raw kubeconfig` && echo $KUBE_VAR | base64 -d > lke-cluster-config.yaml
+export KUBECONFIG=lke-cluster-config.yaml
+kubectl config get-contexts
+kubectl get nodes
+```
+
 ## 参考
 
 https://www.linode.com/docs/guides/how-to-deploy-an-lke-cluster-using-terraform/
