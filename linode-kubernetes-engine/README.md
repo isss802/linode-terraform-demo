@@ -2,6 +2,8 @@
 
 ## 構成図
 
+![1](https://user-images.githubusercontent.com/4577575/163385988-51ca7147-8fc4-41cb-b14d-6d4dfeda0b8d.png)
+
 ## Terraform インストール
 
 ```sh
