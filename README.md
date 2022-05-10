@@ -3,8 +3,8 @@
 各構成についてのTerraformのサンプルを用意している。
 
 ## 事前準備 API Keyの発行
-<img width="600" alt="API_Tokens___My_Profile___Linode_Manager_and_vim_README_md" src="https://user-images.githubusercontent.com/4577575/167548558-e5e63e34-9e2b-42bf-800a-55b8bfeb7563.png">
-<img width="600" alt="API_Tokens___My_Profile___Linode_Manager" src="https://user-images.githubusercontent.com/4577575/167548784-2ebb7a83-40c9-471c-ac05-853f53fef54a.png">
+<img width="600" alt="Linode_Manager_and_to-hisat_•_Mailbox_-_Hiroyuki_Sato" src="https://user-images.githubusercontent.com/4577575/167552636-f6b4bd65-6239-485f-8116-cdecc2f6c5f5.png">
+<img width="600" alt="API_Tokens___My_Profile___Linode_Manager" src="https://user-images.githubusercontent.com/4577575/167552411-aa336f0c-1b70-4e3b-b2bb-5db03cafdfec.png">
 
 端末の環境変数にTokenを読み込み
 ```sh
