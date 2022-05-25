@@ -1,0 +1,148 @@
+   {
+    "ruleFormat": "latest",
+    "rules": {
+        "name": "default",
+        "children": [
+            {
+                "name": "Default Root Object",
+                "children": [],
+                "behaviors": [
+                    {
+                        "name": "rewriteUrl",
+                        "options": {
+                            "behavior": "REWRITE",
+                            "targetUrl": "/index.html"
+                        }
+                    }
+                ],
+                "criteria": [
+                    {
+                        "name": "path",
+                        "options": {
+                            "matchOperator": "MATCHES_ONE_OF",
+                            "values": [
+                                "/"
+                            ],
+                            "matchCaseSensitive": false,
+                            "normalize": false
+                        }
+                    }
+                ],
+                "criteriaMustSatisfy": "all"
+            }
+        ],
+        "behaviors": [
+                {
+						      "name": "origin",
+						      "options": {
+						        "cacheKeyHostname": "REQUEST_HOST_HEADER",
+						        "compress": true,
+						        "enableTrueClientIp": true,
+						        "forwardHostHeader": "ORIGIN_HOSTNAME",
+						        "hostname": "${env.hostname}",
+						        "httpPort": 80,
+						        "httpsPort": 443,
+						        "originCertificate": "",
+						        "originSni": true,
+						        "originType": "CUSTOMER",
+						        "ports": "",
+						        "trueClientIpClientSetting": false,
+						        "trueClientIpHeader": "True-Client-IP",
+						        "verificationMode": "PLATFORM_SETTINGS"
+						      }
+						    },
+								{
+                "name": "originCharacteristics",
+                "options": {
+                    "authenticationMethod": "AWS",
+                    "authenticationMethodTitle": "",
+                    "country": "NORTH_AMERICA",
+                    "accessKeyEncryptedStorage": false,
+                    "awsAccessKeyId": "${env.access_key}",
+                    "awsSecretAccessKey": "${env.secret_key}",
+                    "awsRegion": "${env.region}",
+                    "awsHost": "${env.hostname}",
+                    "awsService": "s3"
+                }
+            },
+            {
+                "name": "contentCharacteristicsDD",
+                "options": {
+                    "catalogSize": "UNKNOWN",
+                    "contentType": "UNKNOWN",
+                    "objectSize": "UNKNOWN",
+                    "optimizeOption": false,
+                    "popularityDistribution": "UNKNOWN"
+                }
+            },
+            {
+                "name": "clientCharacteristics",
+                "options": {
+                    "country": "UNKNOWN"
+                }
+            },
+            {
+                "name": "caching",
+                "options": {
+                    "behavior": "MAX_AGE",
+                    "mustRevalidate": false,
+                    "ttl": "1d"
+                }
+            },
+            {
+                "name": "cacheError",
+                "options": {
+                    "enabled": true,
+                    "preserveStale": true,
+                    "ttl": "10s"
+                }
+            },
+            {
+                "name": "cpCode",
+                "options": {
+                    "value": {
+                        "cpCodeLimits": {
+                            "currentCapacity": -5049,
+                            "limit": 200,
+                            "limitType": "contract"
+                        },
+						            "description": "${env.cpcode_name}",
+						            "id": "${env.cpcode}",
+						            "name": "${env.cpcode_name}",
+                        "products": [
+                            "Download_Delivery"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "cacheKeyQueryParams",
+                "options": {
+                    "behavior": "IGNORE_ALL"
+                }
+            },
+            {
+                "name": "dynamicThroughtputOptimization",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "validateEntityTag",
+                "options": {
+                    "enabled": true
+                }
+            },
+            {
+                "name": "http2",
+                "options": {
+                    "enabled": ""
+                }
+            }
+        ],
+        "options": {
+            "is_secure": false
+        },
+        "variables": []
+    }
+} 
