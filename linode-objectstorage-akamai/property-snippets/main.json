@@ -33,25 +33,25 @@
         ],
         "behaviors": [
                 {
-						      "name": "origin",
-						      "options": {
-						        "cacheKeyHostname": "REQUEST_HOST_HEADER",
-						        "compress": true,
-						        "enableTrueClientIp": true,
-						        "forwardHostHeader": "ORIGIN_HOSTNAME",
-						        "hostname": "${env.hostname}",
-						        "httpPort": 80,
-						        "httpsPort": 443,
-						        "originCertificate": "",
-						        "originSni": true,
-						        "originType": "CUSTOMER",
-						        "ports": "",
-						        "trueClientIpClientSetting": false,
-						        "trueClientIpHeader": "True-Client-IP",
-						        "verificationMode": "PLATFORM_SETTINGS"
-						      }
-						    },
-								{
+                  "name": "origin",
+                  "options": {
+                   "cacheKeyHostname": "REQUEST_HOST_HEADER",
+                   "compress": true,
+                   "enableTrueClientIp": true,
+                   "forwardHostHeader": "ORIGIN_HOSTNAME",
+                   "hostname": "${env.hostname}",
+                   "httpPort": 80,
+                   "httpsPort": 443,
+                   "originCertificate": "",
+                   "originSni": true,
+                   "originType": "CUSTOMER",
+                   "ports": "",
+                   "trueClientIpClientSetting": false,
+                   "trueClientIpHeader": "True-Client-IP",
+                   "verificationMode": "PLATFORM_SETTINGS"
+                 }
+               },
+               {
                 "name": "originCharacteristics",
                 "options": {
                     "authenticationMethod": "AWS",
@@ -106,9 +106,9 @@
                             "limit": 200,
                             "limitType": "contract"
                         },
-						            "description": "${env.cpcode_name}",
-						            "id": "${env.cpcode}",
-						            "name": "${env.cpcode_name}",
+                       "description": "${env.cpcode_name}",
+                       "id": "${env.cpcode}",
+                       "name": "${env.cpcode_name}",
                         "products": [
                             "Download_Delivery"
                         ]

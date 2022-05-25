@@ -1,16 +1,16 @@
 terraform {
-	required_providers {
-		linode = {
-			source	= "linode/linode"
-		}
+  required_providers {
+  linode = {
+    source = "linode/linode"
+  }
     akamai = {
       source = "akamai/akamai"
     }
-	}
+  }
 }
 
 provider "linode" {
-	token = "${var.token}"
+  token = "${var.token}"
 }
 
 provider "akamai" {

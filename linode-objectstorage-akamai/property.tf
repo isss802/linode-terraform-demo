@@ -9,10 +9,10 @@ data "akamai_contract" "contract" {
 
 data "akamai_property_rules_template" "rules" {
   template_file = abspath("${path.module}/property-snippets/main.json")
-	variables {
- 		name = "hostname"
- 		value = "${linode_object_storage_bucket.mybucket.label}.${linode_object_storage_bucket.mybucket.cluster}.linodeobjects.com"
- 		type = "string"
+  variables {
+    name = "hostname"
+    value = "${linode_object_storage_bucket.mybucket.label}.${linode_object_storage_bucket.mybucket.cluster}.linodeobjects.com"
+    type = "string"
   }
   variables {
     name = "region"
@@ -79,8 +79,8 @@ resource "akamai_property_activation" "dd" {
 }
 
 resource "akamai_cp_code" "dd" {
-	name = var.cpcode_name
-	group_id = data.akamai_group.group.id
-	contract_id = data.akamai_contract.contract.id
-	product_id = "prd_Download_Delivery"
+  name = var.cpcode_name
+  group_id = data.akamai_group.group.id
+  contract_id = data.akamai_contract.contract.id
+  product_id = "prd_Download_Delivery"
 }
