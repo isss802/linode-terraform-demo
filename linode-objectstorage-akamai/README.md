@@ -3,7 +3,9 @@
 ## 概要
 
 Linode Object Storageを作成し、index.htmlを配置する。
+
 AkamaiのCDNプロダクトであるDownload Delivertyを作成し、オリジンを作成したLinode Object Storageに設定する。
+
 連携の設定はLinodeで作成したAccess Key/Secret Keyを受け渡して設定を行っている。
 
 ## 構成図
