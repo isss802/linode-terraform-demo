@@ -26,3 +26,7 @@ $ export TF_VAR_token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Linode Kubernetes Engine
 
 ![4](https://user-images.githubusercontent.com/4577575/163385988-51ca7147-8fc4-41cb-b14d-6d4dfeda0b8d.png)
+
+## Linode Object Storage Akamai
+
+<img width="800" alt="構成図_pdf" src="https://user-images.githubusercontent.com/4577575/170216193-50ceb7e8-5634-4841-9885-1ca7f903d98b.png">
