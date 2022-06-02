@@ -3,12 +3,16 @@
 #########################
 variable "token" {}
 
+# Linode Object Storageを立ち上げるリージョンを指定
+
 variable "region" {
   default = "us-southeast-1"
 }
 
+# Linode Object Storageの名前を記載
+
 variable "label" {
-  default = ""
+  default = "example"
 }
 
 #########################
@@ -30,25 +34,35 @@ variable "env" {
   default = "staging"
 }
 
+# Group NameとContract ID(先頭にはctr_が必要)を記載する
+
 variable "akamai_group" {
   default = {
-    group_name = ""
-    contract_id = "ctr_"
+    group_name = "example-group"
+    contract_id = "ctr_XXXXXXXXXX"
   }
 }
 
+# CP Code Nameに任意の名前を設定する
+
 variable "cpcode_name" {
-  default = ""
+  default = "example"
 }
+
+# Akamaiに割り当てるHostnameを指定する
 
 variable "cname" {
-  default = ""
+  default = "hoge.example.com"
 }
+
+# Emailを記載
 
 variable "email" {
-  default = ""
+  default = "hoge@example.com"
 }
 
+# EdgeHostnameを記載する
+
 variable "edge_hostname" {
-  default = ".edgesuite.net"
+  default = "hoge-example-com.edgesuite.net"
 }
